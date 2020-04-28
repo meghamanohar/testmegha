@@ -1,25 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="5457" started-at="2020-04-02T23:21:49Z" finished-at="2020-04-02T23:21:54Z">
+  <suite name="Default suite" duration-ms="30" started-at="2020-04-23T02:40:04Z" finished-at="2020-04-23T02:40:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="5457" started-at="2020-04-02T23:21:49Z" finished-at="2020-04-02T23:21:54Z">
-      <class name="springexample.SearchforTestNGGoogle">
-        <test-method status="PASS" signature="initDriver()[pri:0, instance:springexample.SearchforTestNGGoogle@45cd7bc5]" name="initDriver" is-config="true" duration-ms="3621" started-at="2020-04-02T16:21:45Z" finished-at="2020-04-02T16:21:49Z">
+    <test name="Default test" duration-ms="30" started-at="2020-04-23T02:40:04Z" finished-at="2020-04-23T02:40:04Z">
+      <class name="springexample.ParametersTestNGXML">
+        <test-method status="FAIL" signature="testParameterWithXML(java.lang.String, java.lang.String)[pri:0, instance:springexample.ParametersTestNGXML@8e0379d]" name="testParameterWithXML" duration-ms="0" started-at="2020-04-22T19:40:04Z" finished-at="2020-04-22T19:40:04Z">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'searchKey' is required by @Test on method testParameterWithXML but has not been marked @Optional or defined
+in /private/var/folders/jp/z4y08nzx76z9l_j04jn3cghh0000gn/T/testng-eclipse-1691952683/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'searchKey' is required by @Test on method testParameterWithXML but has not been marked @Optional or defined
+in /private/var/folders/jp/z4y08nzx76z9l_j04jn3cghh0000gn/T/testng-eclipse-1691952683/testng-customsuite.xml
+	at org.testng.internal.Parameters.createParameters(Parameters.java:155)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:358)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:450)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initDriver -->
-        <test-method status="PASS" signature="searchTestngIngoogle()[pri:0, instance:springexample.SearchforTestNGGoogle@45cd7bc5]" name="searchTestngIngoogle" duration-ms="5431" started-at="2020-04-02T16:21:49Z" finished-at="2020-04-02T16:21:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchTestngIngoogle -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:springexample.SearchforTestNGGoogle@45cd7bc5]" name="quitDriver" is-config="true" duration-ms="292" started-at="2020-04-02T16:21:54Z" finished-at="2020-04-02T16:21:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quitDriver -->
-      </class> <!-- springexample.SearchforTestNGGoogle -->
+        </test-method> <!-- testParameterWithXML -->
+      </class> <!-- springexample.ParametersTestNGXML -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

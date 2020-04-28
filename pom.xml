@@ -1,13 +1,14 @@
-	<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.javacodegeeks.snippets.enterprise</groupId>
-  <artifactId>springexample</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+   <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.javacodegeeks.snippets.enterprise</groupId>
+    <artifactId>springexample</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
      <dependencies>  
         <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>3.141.59</version>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+            <scope>test</scope>       
    	    </dependency>      
         <dependency>
             <groupId>org.testng</groupId>
@@ -15,5 +16,35 @@
             <version>6.8.8</version>
             <scope>test</scope>
         </dependency>
-    </dependencies>	
-</project>
+        <dependency>
+			<groupId>com.google.inject</groupId>
+			<artifactId>guice</artifactId>
+			<version>2.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>3.9</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+		<dependency>
+  			  <groupId>javax.mail</groupId>
+    		  <artifactId>mail</artifactId>
+    		  <version>1.4</version>
+    		  <!-- https://mvnrepository.com/artifact/com.lowagie/itext -->
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.mozilla/rhino -->
+		<dependency>
+   			 <groupId>org.mozilla</groupId>
+   			 <artifactId>rhino</artifactId>
+   			 <version>1.7.12</version>
+		</dependency>
+        
+        <dependency>
+   			 <groupId>com.lowagie</groupId>
+   			 <artifactId>itext</artifactId>
+   			 <version>2.1.7</version>
+		</dependency>
+	
+     </dependencies>	
+    </project> 
